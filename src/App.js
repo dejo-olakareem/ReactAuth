@@ -39,7 +39,11 @@ class App extends Component {
       case false:
         return <LoginForm />;
       default:
-        return <Spinner size="large" />;
+        return (
+        <View style={styles.SpinnerView}>
+         <Spinner size="large" />
+        </View>
+        );
     }
   }
 
@@ -52,5 +56,11 @@ class App extends Component {
     );
   }
 }
+
+const styles = {
+  SpinnerView: {
+    alignSelf: 'center'
+  }
+};
 
 export default App;
