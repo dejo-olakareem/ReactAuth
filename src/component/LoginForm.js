@@ -35,9 +35,9 @@ class LoginForm extends Component {
     });
   }
 
-  renderButton(){
+  renderButton() {
     if (this.state.loading) {
-      return <Spinner size="small" />
+      return <Spinner size="small" />;
     }
 
     return (
