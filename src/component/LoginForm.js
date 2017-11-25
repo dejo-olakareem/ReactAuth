@@ -25,7 +25,7 @@ class LoginForm extends Component {
     this.setState({
       email: '',
       password: '',
-      loading:false,
+      loading: false,
       error: ''
     });
   }
